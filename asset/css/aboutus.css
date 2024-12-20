@@ -1,0 +1,34 @@
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+html::-webkit-scrollbar { 
+    display: none; 
+}
+
+body{
+    background-color: rgb(15, 15, 61);
+    background-image: url(../aboutus/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: brightness(0.7) blur(3.5px);
+    color: white;
+}
+
+.topsec{
+padding: 50px;
+}
+
+a i{
+    color: white;
+}
+
+p a {
+    color: white;
+}
+
+h3 a{
+    text-decoration: none;
+    color: white;
+}

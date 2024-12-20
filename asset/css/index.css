@@ -1,0 +1,41 @@
+body{
+    background-color: #100e1b;
+}
+
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+html::-webkit-scrollbar { 
+    display: none; 
+}
+
+#hero {
+    display: flex;
+    height: 100vh;
+    background-position: var(--hero-position);
+    background-size: cover;
+    background-image: var(--hero-bg);
+    align-items: center;
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width: 400px){
+}
+
+.content .title{
+   /* font-size: 4em; */
+   text-shadow: 2px 2px 4px var(--secondary-100);
+}
+
+.content p{
+   text-shadow: 2px 2px 2px var(--secondary-100);
+}
+
+.content .btnsh{
+   padding: 10px 20px;
+   font-size: 1.5em;
+   box-shadow: 4px 4px white;
+}

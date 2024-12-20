@@ -1,0 +1,88 @@
+body{
+    background-color: #100e1b;
+}
+
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+html::-webkit-scrollbar { 
+    display: none;
+}
+
+#hero {
+    display: flex;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: var(--games-bg);
+    backdrop-filter: brightness(0.7);
+    align-items: center;    
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    background: #4d2b6b14;
+    backdrop-filter: brightness(0.8);
+    height: 100vh;
+    width: 100vw;
+} 
+
+@media only screen and (max-width: 467px) {
+  #hero {
+    display: block;
+    background-image: none;
+  }
+
+
+}
+
+@media only screen and (max-width: 790px) {
+  body {
+    background-position: center;
+    background-repeat: inherit;
+    background-size: auto;
+    background-image: var(--games-bg);
+  }
+}
+
+.card {
+    box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 9px 0px rgba(0,0,0,0.75);
+}
+
+.card .card-body {
+    display: relative; /*gada display relative BLOK adanya position relative:v*/
+}
+
+.joedoel .judul {
+    text-shadow: 2px 2px 4px var(--secondary-100);
+    position: relative;
+}
+
+.joedoel .subjudul {
+    text-shadow: 2px 2px 2px var(--secondary-100);
+    position: relative;
+}
+
+/* .card .img-size {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+} */
+
+#responsive-card {
+    padding-top: 25px;
+}
+
+@media only screen and (max-width: 480px){
+    #responsive-card{
+        padding-top: 100px;
+        padding: 50px;
+    }
+}
