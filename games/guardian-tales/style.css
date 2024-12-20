@@ -1,0 +1,46 @@
+#canvas
+{
+    background-color:#30c0df;
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+}
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+html::-webkit-scrollbar { 
+    display: none; 
+}
+#bang {
+    background-color: var(--background-300);
+    display: flex; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.canvas-border {
+    border: 2px solid white; 
+    box-sizing: border-box;
+}
+
+.small-card {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    justify-items: center;
+    left: 50%;
+    transform: translateX(-50%); 
+  }
+
+.card {
+    background-color: var(--background-100);
+}
+

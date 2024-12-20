@@ -171,4 +171,8 @@ html[data-theme="dark"] {
   filter: var(--filter-invert);
 }
 
+#startButton{
+  filter: var(--filter-invert);
+}
+
 /* END Games.html CODE */
